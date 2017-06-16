@@ -12,7 +12,7 @@ namespace ReadMeh.Tests.Controllers
         public void Index()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            WelcomeController controller = new WelcomeController();
 
             // Act
             ViewResult result = controller.Index() as ViewResult;

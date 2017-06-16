@@ -13,7 +13,7 @@ namespace ReadMeh.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201706101800201_initial"; }
+            get { return "201706142333158_initial"; }
         }
         
         string IMigrationMetadata.Source

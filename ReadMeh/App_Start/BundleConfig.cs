@@ -28,10 +28,12 @@ namespace ReadMeh
                        "~/Scripts/angular-route.js"));
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                         "~/app/app.js",
-                        "~/app/homeController.js",
-                        "~/app/addController.js",
-                        "~/app/listController.js",
-                        "~/app/detailController.js")
+                        "~/app/WelcomeController.js",
+                        "~/app/LoginController.js",
+                        "~/app/SignupController.js",
+                        "~/app/AddController.js",
+                        "~/app/ListController.js",
+                        "~/app/DetailController.js")
                         .IncludeDirectory("~/app", "*.js", true
                         ));
         }

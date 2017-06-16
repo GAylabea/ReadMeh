@@ -1,0 +1,10 @@
+﻿<div>
+    <h3>Add a Book:</h3>
+    <form name="AddBook" method="post">
+        Book: <br> <input type="text" name="Book Title" value="Title" ng-model="book.Title"> <br>
+        Author: <br> <input type="text" name="Book Author" value="Author" ng-model="book.Author"> <br>
+        Rating: <br> <input type="text" name="Rating" value="Rating" ng-model="book.Rating"> <br>
+        UnReview: <br> <textarea name="comment" value="unReview" ng-model="book.unReview">enter comments here ...</textarea> <br><br>
+        <button type="submit" value="Submit UnReview" ng-click="addBook(book)">Submit Book</button>
+    </form>
+</div>

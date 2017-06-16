@@ -4,12 +4,19 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using System.Data.Entity;
+using Castle.Components.DictionaryAdapter;
+using System.Collections.Generic;
 
 namespace ReadMeh.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+        //  public int Id { get; set; }
+        public override string UserName { get; set; }
+
+        public List<Book> BookCollection { get; set; }
+        // should this be a function? GetEntireBookCollection(){return allbooks??}   or it goes in the controller!
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager, string authenticationType)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -21,12 +28,12 @@ namespace ReadMeh.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Book> Books { get; set; }
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("ReadMeh", throwIfV1Schema: false)
         {
         }
-        public DbSet<Book> Books { get; set; }
-        public DbSet<User> Users { get; set; }
+        
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

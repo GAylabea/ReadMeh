@@ -10,10 +10,10 @@ namespace ReadMeh.Controllers
     public interface IBookRepository
     {
         void Save(Book book);
-        Book Get(int id);
-        void Delete(Book book);
-        void Update(Book book);
-        IEnumerable<Book> GetAll();
+        Book GetById(int id);
+        Book Delete(int id);
+        Book Update(int id, Book book);
+        IEnumerable<Book> GetAll(string userId);
 
     }
 }

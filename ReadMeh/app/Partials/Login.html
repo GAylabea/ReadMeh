@@ -1,6 +1,12 @@
-﻿<div>
-    <input type="text" id="username" ng-model="username" />
-    <input type="text" id="password" ng-model="password" />
-    <input type="button" value="Login" class="btn-default" ng-click="login()" />
-    
-</div>
+﻿<a href="#" class="brand-logo center"><img class="logo responsive-img" src="Img/ReadMeh.png"></a>
+<form class="form-inline">
+    <label class="sr-only" for="inlineFormInput">Username - your email</label>
+    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="username" placeholder="JaneDoe@gmail.com" ng-model="username">
+
+    <label class="sr-only" for="inlineFormInput">Password</label>
+    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="password" placeholder="Jane Doe" ng-model="password">
+
+    <button type="submit" value="Login" class="btn btn-primary" ng-click="login()">Login</button>
+</form>
+
+

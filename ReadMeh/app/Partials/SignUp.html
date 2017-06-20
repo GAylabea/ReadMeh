@@ -1,8 +1,13 @@
-﻿<div>
-    <input type="text" id="UserName" placeholder="Username" ng-model="Email" />
-    <input type="text" id="Password" placeholder="Password" ng-model="Password" />
-    <input type="text" id="ConfirmPassword" placeholder="ConfirmPassword" ng-model="ConfirmPassword" />
-    <input type="button" value="sign up" class="btn-default" ng-click="signUp()" />
-    <a href="#!/login">Login</a>
-</div>
+﻿<a href="#" class="brand-logo center"><img class="logo responsive-img" src="Img/ReadMeh.png"></a>
+<form class="form-inline">
+    <label class="sr-only" for="inlineFormInput">Username - your email</label>
+    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="username" placeholder="JaneDoe@gmail.com" ng-model="Email">
+    <label class="sr-only" for="inlineFormInput">Password</label>
+    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="password" placeholder="Password" ng-model="Password">
+    <label class="sr-only" for="inlineFormInput">Confirm Password</label>
+    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="ConfirmPassword" placeholder="Confirm Password" ng-model="ConfirmPassword" >
+    <button type="submit" value="Login" class="btn btn-primary" ng-click="signUp()">Sign Up</button>
+</form>
+
+
 

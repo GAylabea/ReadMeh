@@ -20,16 +20,16 @@
                 data: { grant_type: "password", username: $scope.username, password: $scope.password }
             })
             .then(function (result) {
-                debugger
+                //debugger
                 console.log("result=", result);
 
                 sessionStorage.setItem('token', result.data.access_token);
                 // sessionStorage.removeItem for logout (keyname)
                 $http.defaults.headers.common['Authorization'] = `bearer ${result.data.access_token}`;
 
-                $location.path("/home");
+                $location.path("/list");
             }, function (error) {
-                debugger
+                //debugger
             });
         }
     }

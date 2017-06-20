@@ -20,24 +20,33 @@ namespace ReadMeh.DAL
             _context.Books.Add(newBook);
             _context.SaveChanges();
         }
-        public Book Get(int id)
+        public Book GetById(int id)
         {
-            throw new NotImplementedException();
+            return _context.Books.Find(id); // pass the id because it's more reliable than the js
         }
 
-        public IEnumerable<Book> GetAll()
+        public IEnumerable<Book> GetAll(string userId)
         {
-            return _context.Books.ToList();
+            return _context.Books.Where(x => userId == x.userId);
         }
 
-        public void Delete(Book book)
+        public Book Delete(int id)
         {
-            throw new NotImplementedException();
+            var Book = _context.Books.Find(id);
+            _context.Books.Remove(Book);
+            _context.SaveChanges();
+            return Book;
         }
 
-        public void Update(Book book)
+        public Book Update(int id, Book book)
         {
-            throw new NotImplementedException();
+            var Book = _context.Books.Find(id);
+            Book.Author = book.Author;
+            Book.Title = book.Title;
+            Book.unReview = book.unReview;
+            Book.Rating = book.Rating;
+            _context.SaveChanges();
+            return Book;
         }
     }
 }

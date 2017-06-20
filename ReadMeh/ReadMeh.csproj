@@ -256,6 +256,10 @@
     <Compile Include="Migrations\201706142333158_initial.Designer.cs">
       <DependentUpon>201706142333158_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706162202003_addedUserIdtoBook.cs" />
+    <Compile Include="Migrations\201706162202003_addedUserIdtoBook.Designer.cs">
+      <DependentUpon>201706162202003_addedUserIdtoBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -270,9 +274,13 @@
   <ItemGroup>
     <Content Include="app\AddBookController.js" />
     <Content Include="app\app.js" />
+    <Content Include="app\BookController.js" />
     <Content Include="app\ListBookController.js" />
     <Content Include="app\LoginController.js" />
+    <Content Include="app\LogOutController.js" />
     <Content Include="app\Partials\AddBook.html" />
+    <Content Include="app\Partials\Book.html" />
+    <Content Include="app\Partials\EditBook.html" />
     <Content Include="app\Partials\ListBooks.html" />
     <Content Include="app\Partials\Login.html" />
     <Content Include="app\Partials\SignUp.html" />
@@ -280,6 +288,8 @@
     <Content Include="app\SignupController.js" />
     <Content Include="app\WelcomeController.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -290,8 +300,6 @@
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
@@ -313,7 +321,17 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -342,18 +360,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Img\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201706142333158_initial.resx">
       <DependentUpon>201706142333158_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706162202003_addedUserIdtoBook.resx">
+      <DependentUpon>201706162202003_addedUserIdtoBook.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

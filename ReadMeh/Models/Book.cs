@@ -9,11 +9,12 @@ namespace ReadMeh.Models
         public class Book
         {
             [Key]
-            public int ID { get; set; } //hoping this will be the ISBN somehow, maybe?
+            public int ID { get; set; } 
             public string Title { get; set; }
             public string Author { get; set; }
             public int Rating { get; set; }
             public string unReview { get; set; }
+            public string userId { get; set; }
 
         }
     }

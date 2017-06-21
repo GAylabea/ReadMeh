@@ -13,6 +13,7 @@ namespace ReadMeh.Controllers
         Book GetById(int id);
         Book Delete(int id);
         Book Update(int id, Book book);
+        IEnumerable<Book> GetAllUsersBooks();
         IEnumerable<Book> GetAll(string userId);
 
     }

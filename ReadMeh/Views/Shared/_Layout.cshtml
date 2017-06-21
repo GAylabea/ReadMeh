@@ -7,7 +7,7 @@
     <title>ReadMeh</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/Site.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
 </head>
 <body ng-app="readmeh"> 
@@ -29,7 +29,7 @@
                     <li><a href="/signup">Sign Up</a></li>
                     <li><a href="/welcome">Home</a></li>
                     <li><a href="/add">Add Books</a></li>
-                    <li><a href="/list">List Books</a></li>
+                    <li><a href="/list">Your Books</a></li>
                 </ul>
             </div>
         </div>
@@ -43,9 +43,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="Content/bootstrap.min.js"></script>
-    <script src="Content/bootstrap.css"></script>
-    <script src="Content/Site.css"></script>
+    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/angular")

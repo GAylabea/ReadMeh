@@ -1,4 +1,5 @@
-﻿<div class="media" style="width: 75rem;" ng-repeat="book in books">
+﻿
+<div class="media" style="width: 75rem;" ng-repeat="book in books">
     <div class="media-left media-heading" >
         <a href="#">
             <img class="media-object" src="Img/ReadMeh2.png" alt="Card image cap">
@@ -8,7 +9,7 @@
         <h4 class="media-heading">{{book.Title}}</h4>
         <h6 class="card-title2">{{book.Author}}</h6>
         <p class="card-text">{{book.unReview}}</p>
-        <p class="card-text">{{book.Rating}}</p> 
+        <p class="card-text">My rating: {{book.Rating}}</p> 
         <button type="button" class="btn btn-default" aria-label="Left Align">
             <span class="glyphicon glyphicon-pencil" aria-hidden="true" ng-click="editBook(book.ID)"></span>
         </button>
@@ -17,5 +18,6 @@
         </button>
     </div>
 </div>
+
 
 

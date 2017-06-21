@@ -5,7 +5,6 @@
 
             sessionStorage.removeItem('token');
             $http.defaults.headers.common['Authorization'] = "";
-
             $location.path("/login");
         }
     }

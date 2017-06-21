@@ -29,7 +29,7 @@
 
                 $location.path("/list");
             }, function (error) {
-                //debugger
+                
             });
         }
     }

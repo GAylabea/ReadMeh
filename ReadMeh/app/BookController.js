@@ -10,7 +10,7 @@
     $scope.updateBook = function () {
         $http.put("api/put/" + $routeParams.id, $scope.book)
         .then(function (result) {
-            $location.path("/list");
+        $location.path("/list");
         })
     };
 }]);

@@ -29,6 +29,13 @@ namespace ReadMeh.Controllers
         }
 
         [HttpGet]
+        [Route("api/listall")]
+        public IEnumerable<Book> GetAllUsersBooks()
+        {
+            return _bookRepository.GetAllUsersBooks();
+        }
+
+        [HttpGet]
         [Route("api/list")]
         public IEnumerable<Book> GetAll()
         {

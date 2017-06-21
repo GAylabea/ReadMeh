@@ -14,7 +14,7 @@
 
 .navbar {
     font-family: 'Abril Fatface', cursive;
-    font: normal 25px Abril Fatface;
+    font: normal 20px Abril Fatface;
 }
 
 .navbar-container {
@@ -30,5 +30,7 @@ textarea {
 }
 
 .media {
-    border:medium, solid, blue;
+    border-radius: 25px;
+    background: #A7D2CB;
+    padding: 20px;
 }

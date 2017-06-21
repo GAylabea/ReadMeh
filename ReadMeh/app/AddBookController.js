@@ -4,7 +4,7 @@
     $scope.addBook = function () {
         $http.post("api/book", $scope.book)
     .then(function (result) {
-        $location.path("/welcome");
+        $location.path("/list");
         $scope.book = {};
         });
     }

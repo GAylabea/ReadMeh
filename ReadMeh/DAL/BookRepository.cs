@@ -25,6 +25,10 @@ namespace ReadMeh.DAL
             return _context.Books.Find(id); // pass the id because it's more reliable than the js
         }
 
+        public IEnumerable<Book> GetAllUsersBooks()
+        {
+            return _context.Books;
+        }
         public IEnumerable<Book> GetAll(string userId)
         {
             return _context.Books.Where(x => userId == x.userId);

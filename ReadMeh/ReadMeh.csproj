@@ -281,6 +281,8 @@
     <Content Include="app\Partials\AddBook.html" />
     <Content Include="app\Partials\Book.html" />
     <Content Include="app\Partials\EditBook.html" />
+    <Content Include="app\ListAllBooksController.js" />
+    <Content Include="app\Partials\ListAllBooks.html" />
     <Content Include="app\Partials\ListBooks.html" />
     <Content Include="app\Partials\Login.html" />
     <Content Include="app\Partials\SignUp.html" />

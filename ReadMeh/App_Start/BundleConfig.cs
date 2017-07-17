@@ -33,7 +33,8 @@ namespace ReadMeh
                         "~/app/SignupController.js",
                         "~/app/AddBookController.js",
                         "~/app/BookController.js",
-                        "~/app/ListBookController.js")
+                        "~/app/ListBookController.js",
+                        "~/app/ListAllBooksController.js")
                      
                         .IncludeDirectory("~/app", "*.js", true
                         ));

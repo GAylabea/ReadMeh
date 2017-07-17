@@ -1,0 +1,14 @@
+﻿<h3>Recently added unReviews</h3>
+<div class="media" style="width: 75rem;" ng-repeat="book in books | orderBy:'Rating'">
+    <div class="media-left media-heading">
+        <img class="media-object" src="Img/ReadMeh2.png" alt="Card image cap">
+    </div>
+    <div class="media-body col s4">
+        <h4 class="media-heading">{{book.Title}}</h4>
+        <h6 class="card-title2">{{book.Author}}</h6>
+        <p class="card-text">{{book.unReview}}</p>
+        <p class="card-text">Rating: {{book.Rating}}</p>
+    </div>
+</div>
+
+

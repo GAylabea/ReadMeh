@@ -21,6 +21,10 @@
                     templateUrl: 'app/partials/ListBooks.html',
                     controller: 'ListBookController'
                 })
+                .when('/listall', {
+                    templateUrl: 'app/partials/ListAllBooks.html',
+                    controller: 'ListAllBooksController'
+                })
                 .when('/book/:id', { // the colon means the parameter that we injected into the BookController(routeParams)
                     templateUrl: 'app/partials/Book.html',
                     controller: 'BookController'

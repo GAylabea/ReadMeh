@@ -1,9 +1,7 @@
-﻿
-<div class="media" style="width: 75rem;" ng-repeat="book in books">
+﻿<h3>Your Collection</h3>
+<div class="media" style="width: 75rem;" ng-repeat="book in books | orderBy:'Title'">
     <div class="media-left media-heading" >
-        <a href="#">
             <img class="media-object" src="Img/ReadMeh2.png" alt="Card image cap">
-        </a>
     </div>
     <div class="media-body col s4" >
         <h4 class="media-heading">{{book.Title}}</h4>

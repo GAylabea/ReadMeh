@@ -13,6 +13,7 @@ namespace ReadMeh.Models
             public string Title { get; set; }
             public string Author { get; set; }
             public int Rating { get; set; }
+            public int RatingAverage { get; set; }
             public string unReview { get; set; }
             public string userId { get; set; }
 

@@ -260,6 +260,10 @@
     <Compile Include="Migrations\201706162202003_addedUserIdtoBook.Designer.cs">
       <DependentUpon>201706162202003_addedUserIdtoBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707242343464_addedRatingAveragetoBooks.cs" />
+    <Compile Include="Migrations\201707242343464_addedRatingAveragetoBooks.Designer.cs">
+      <DependentUpon>201707242343464_addedRatingAveragetoBooks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -377,6 +381,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706162202003_addedUserIdtoBook.resx">
       <DependentUpon>201706162202003_addedUserIdtoBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707242343464_addedRatingAveragetoBooks.resx">
+      <DependentUpon>201707242343464_addedRatingAveragetoBooks.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
